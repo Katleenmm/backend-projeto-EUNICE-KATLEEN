@@ -82,7 +82,7 @@ ________________________________________
 GET /frutas/{name}
 •	Descrição: Busca na API externa uma fruta pelo nome (ignorando maiúsculas e minúsculas).
 •	Exemplo de requisição:
-GET http://localhost:8080/frutas/banana
+GET http://localhost:8000/frutas/banana
 •	Exemplo de resposta:
 
 {
