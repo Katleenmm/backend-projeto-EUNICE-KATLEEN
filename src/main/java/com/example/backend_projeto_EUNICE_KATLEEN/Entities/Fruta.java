@@ -6,13 +6,17 @@ public class Fruta {
     private String family;
     private String order;
     private String genus;
+    private Nutrientes nutritions;
 
-    public Fruta(String name, String order, String genus){
+
+    public Fruta(String name, Integer id, String family, String order, String genus, Nutrientes nutritions) {
         this.name = name;
         this.id = id;
+        this.family = family;
         this.order = order;
         this.genus = genus;
-        //this.nutritions = nutritions;
+        this.nutritions = nutritions;
+
     }
 
     public String getName() {
@@ -53,5 +57,13 @@ public class Fruta {
 
     public void setGenus(String genus) {
         this.genus = genus;
+    }
+
+    public Nutrientes getNutrientes() {
+        return nutritions;
+    }
+
+    public void setNutrientes(Nutrientes nutritions) {
+        this.nutritions = nutritions;
     }
 }
